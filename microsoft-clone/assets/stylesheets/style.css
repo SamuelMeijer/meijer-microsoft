@@ -1,4 +1,5 @@
-/* ***** IMPORTS ***** */
+/* ***** STYLED AND TESTED WITH RESOLUTION 1680x1050
+WONT DISPLAY PROPERLY ON OTHER RESOLUTIONS ***** */
 
 /* ***** VARIABLES ***** */
 :root {
@@ -53,7 +54,7 @@ a:hover {
 
 /* ***** HEADER START ***** */
 .header {
-    height: 54px; /* 54px taget från dev.tools */
+    height: 54px;
     width: 100%;
 }
 
@@ -65,16 +66,11 @@ a:hover {
     justify-content: space-between;
     align-items: center;
 
-    /* TODO: FLYTTA? */
     font-size: 0.8rem;
     letter-spacing: 0.1mm;
-
-    /* TODO: REMOVE BACKGROUND */
-    background-color: darksalmon;
 }
 
 .header-banner-logo-image {
-    /* 23px från dev.tools */
     height: 23px;
     padding: 0 10px;
     margin-right: 10px;
@@ -223,7 +219,6 @@ a:hover {
 .main-section-two-content {
     height: 100%;
     width: 100%;
-    background-color: darkgrey;
 
     display: flex;
     flex-direction: row;
@@ -267,6 +262,7 @@ a:hover {
 }
 
 /* ** SECTION THREE **/
+/* TODO: MAKE THE WHOLE ARTICLE INTO A LINK */
 .main-section-three {
     height: 400px;
     width: 100%;
@@ -277,7 +273,6 @@ a:hover {
     width: 100%;
 
     display: flex;
-    background-color: lightsalmon;
 }
 
 .main-section-three-article {
@@ -344,7 +339,6 @@ a:hover {
     display:flex;
     flex-direction: column;
     justify-content: center;
-    background-color: yellow;
 }
 
 .main-section-four-title {
@@ -359,6 +353,7 @@ a:hover {
 }
 
 /* ** SECTION FIVE **/
+/* TODO: MAKE THE WHOLE ARTICLE INTO A LINK */
 .main-section-five {
     height: 420px;
     width: 100%;
@@ -370,7 +365,6 @@ a:hover {
 
     display: flex;
     flex-direction: column;
-    background-color: lightpink;
 }
 
 .main-section-five-title {
@@ -425,9 +419,6 @@ a:hover {
     height: 100%;
     width: 100%;
 
-    /* TODO: REMOVE BACKGROUND-COLOR */
-    background-color: lightgreen;
-
     display:flex;
     justify-content: flex-start;
 
@@ -444,5 +435,77 @@ a:hover {
 /* ***** SOCIAL MEDIA END ***** */
 
 /* ***** FOOTER START ***** */
+.footer {
+    height: 400px;
+    width: 100%;
+}
 
+.footer-content {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    color: var(--color-nav-footer);
+}
+
+.footer-top {
+    height: 100%;
+    width: 100%;
+    flex: 9;
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.footer-top-content-title {
+    margin-top: 36px;
+    font-size: 1rem;
+}
+
+.footer-top-content-menu-item {
+    margin: 8px 0;
+}
+
+.footer-bottom {
+    height: 100%;
+    width: 100%;
+    flex: 1;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-bottom-content-right-menu {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+}
+
+.footer-bottom-content-right-menu-item {
+    height: 100%;
+    margin: 0 12px;
+
+    font-size: 0.7rem;
+}
+
+.footer-top-content-link,
+.footer-bottom-content-link {
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: var(--color-nav-footer);
+}
+
+.footer-top-content-link:hover,
+.footer-bottom-content-link:hover {
+    color: var(--color-text-general);
+}
+
+
+.fa-globe-americas {
+    font-size: 1.2rem;
+}
 /* ***** FOOTER END ***** */
