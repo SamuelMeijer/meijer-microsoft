@@ -1,0 +1,448 @@
+/* ***** IMPORTS ***** */
+
+/* ***** VARIABLES ***** */
+:root {
+    --color-nav-main: #262626;
+    --color-nav-footer: #616161;
+    --color-text-general: #000;
+
+    --font-size-general: 15px;
+}
+
+/* ***** RESET ***** */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ***** GENERAL SETTINGS ***** */
+body {
+    font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-size: var(--font-size-general);
+    color: var(--color-text-general);
+    background-color: #fff;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+/* ***** UTILITIES ***** */
+.wrapper {
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.btn {
+    padding: 8px 20px;
+    background-color: #000;
+
+    color: #fff;
+}
+
+/* ***** HEADER START ***** */
+.header {
+    height: 54px; /* 54px taget från dev.tools */
+    width: 100%;
+}
+
+.header-container {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* TODO: FLYTTA? */
+    font-size: 0.8rem;
+    letter-spacing: 0.1mm;
+
+    /* TODO: REMOVE BACKGROUND */
+    background-color: darksalmon;
+}
+
+.header-banner-logo-image {
+    /* 23px från dev.tools */
+    height: 23px;
+    padding: 0 10px;
+    margin-right: 10px;
+}
+
+/* ***** MAIN-NAV START ***** */
+.header-main-nav {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+}
+
+.header-main-nav-middle {
+    height: 100%;
+    width: 100%;
+    flex: 4;
+}
+
+.header-main-nav-middle-menu {
+    height: 100%;
+    width: 100%;
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header-main-nav-middle-menu-item {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.header-main-nav-middle-menu-item-link {
+    height: 100%;
+    width: 100%;
+    padding: 0 10px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--color-nav-main);
+}
+
+.header-main-nav-right {
+    height: 100%;
+    width: 100%;
+    flex: 6;
+    display: flex;
+}
+
+.header-main-nav-right-menu {
+    height: 100%;
+    width: 100%;
+    
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header-main-nav-right-menu-item {
+    height: 100%;
+    padding: 0 20px;
+}
+
+.header-main-nav-right-menu-item-link {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    
+    color: var(--color-nav-main);
+}
+
+.hela-microsoft::after {
+    content: "^";
+    padding-right: 2px;
+    font-size: 0.9rem;
+    font-weight: 200;
+    transform: rotate(180deg);
+}
+
+.fas {
+    padding: 0 3px;
+}
+
+.fa-search {
+    transform: rotate(90deg);
+}
+/* ***** MAIN-NAV END ***** */
+/* ***** HEADER END ***** */
+
+/* ***** MAIN START ***** */
+/* ***** HERO START ***** */
+.main-hero {
+    height: 565px;
+    width: 100%;
+
+    background: url(../img/xbox-series-s.jpeg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main-hero-content {
+    height: 100%;
+    width: 88%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-hero-title {
+    margin: 20px 0;
+    font-size: 2rem;
+}
+
+.main-hero-paragraph {
+    font-weight: 400;
+}
+
+.main-hero-link {
+    width: 115px;
+    margin: 20px 0;
+    font-weight: 600;
+}
+
+.main-hero-link::after {
+    content: ">";
+    padding-left: 5px;
+    font-size: 1rem;
+    font-weight: 300;
+}
+/* ***** HERO END ***** */
+
+/* ** SECTION TWO **/
+.main-section-two {
+    height: 175px;
+    width: 100%;
+}
+
+.main-section-two-content {
+    height: 100%;
+    width: 100%;
+    background-color: darkgrey;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-section-two-menu {
+    height: 100%;
+    width: 100%;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-section-two-menu-item {
+    height: 100%;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+}
+
+.main-section-two-menu-item-link {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:  center;
+
+    text-align: center;
+    color: var(--color-text-general);
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.main-section-two-menu-item-link img {
+    margin: 5px 0;
+}
+
+/* ** SECTION THREE **/
+.main-section-three {
+    height: 400px;
+    width: 100%;
+}
+
+.main-section-three-content {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    background-color: lightsalmon;
+}
+
+.main-section-three-article {
+    height: 100%;
+    width: 100%;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.main-section-three-article-title {
+    margin-top: 40px;
+    font-size: 1.2rem;
+}
+
+.main-section-three-article-paragraph {
+    margin: 10px 0;
+}
+
+.main-section-three-link-container {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: flex-start;
+}
+
+.main-section-three-link {
+    padding-right: 30px;
+    font-weight: 600;
+}
+
+.main-section-three-link::after {
+    content: ">";
+    padding-left: 5px;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+/* ** SECTION FOUR **/
+.main-section-four {
+    height: 565px;
+    width: 100%;
+
+    background: url(../img/surface-book.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.main-section-four-content {
+    height: 100%;
+    width: 100%;
+    
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.main-section-four-text {
+    height: 100%;
+    width: 40%;
+    
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: yellow;
+}
+
+.main-section-four-title {
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+.main-section-four-link {
+    width: 115px;
+    margin: 20px 0;
+    font-weight: 600;
+}
+
+/* ** SECTION FIVE **/
+.main-section-five {
+    height: 420px;
+    width: 100%;
+}
+
+.main-section-five-content {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    background-color: lightpink;
+}
+
+.main-section-five-title {
+    font-size: 1.4rem;
+    margin: 15px 10px;
+}
+
+.main-section-five-article-container {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+}
+
+.main-section-five-article {
+    height: 100%;
+    width: 100%;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.main-section-five-article-title {
+    margin-top: 40px;
+    font-size: 1.2rem;
+}
+
+.main-section-five-article-paragraph {
+    margin: 10px 0;
+}
+
+.main-section-five-link {
+    font-weight: 600;
+}
+
+.main-section-five-link::after {
+    content: ">";
+    padding-left: 5px;
+    font-size: 1rem;
+    font-weight: 300;
+}
+/* ***** MAIN END ***** */
+
+/* ***** SOCIAL MEDIA START ***** */
+.section-socialmedia {
+    height: 40px;
+    width: 100%;
+}
+
+.section-socialmedia-menu {
+    height: 100%;
+    width: 100%;
+
+    /* TODO: REMOVE BACKGROUND-COLOR */
+    background-color: lightgreen;
+
+    display:flex;
+    justify-content: flex-start;
+
+    color: var(--color-nav-footer);
+}
+
+.section-socialmedia-menu-item {
+    height: 100%;
+    margin: 0 5px;
+
+    display: flex;
+    align-items: center;
+}
+/* ***** SOCIAL MEDIA END ***** */
+
+/* ***** FOOTER START ***** */
+
+/* ***** FOOTER END ***** */
