@@ -1,6 +1,8 @@
 /* ***** STYLED AND TESTED WITH RESOLUTION 1680x1050
 WONT DISPLAY PROPERLY ON OTHER RESOLUTIONS ***** */
 
+/* TODO: REPLACE x-link::after WITH ICON TO PREVENT text-decoration AND EASIER TRANSFORMATION WHEN HOVERING */
+
 /* ***** VARIABLES ***** */
 :root {
     --color-nav-main: #262626;
@@ -81,8 +83,8 @@ a:hover, a:active {
     margin-right: 10px;
 }
 
-/* ***** MAIN-NAV START ***** */
-.header-main-nav {
+/* ***** NAVIGATION START ***** */
+.header-nav-container {
     height: 100%;
     width: 100%;
 
@@ -90,13 +92,14 @@ a:hover, a:active {
     align-items: center;
 }
 
-.header-main-nav-middle {
+/* ** NAV MAIN **/
+.header-nav-main {
     height: 100%;
     width: 100%;
     flex: 4;
 }
 
-.header-main-nav-middle-menu {
+.header-nav-main-menu {
     height: 100%;
     width: 100%;
     
@@ -105,40 +108,35 @@ a:hover, a:active {
     align-items: center;
 }
 
-.header-main-nav-middle-menu-item {
+.header-nav-main-menu-item {
+    height: 100%;
+    width: 100%;
+
     display: flex;
+    align-items: center;
 }
 
-.header-main-nav-middle-menu-item-link {
+.header-nav-main-menu-item-link {
     margin: 0 10px;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
     color: var(--color-nav-main);
 }
 
-.header-main-nav-middle-menu-item-link:hover {
+.header-nav-main-menu-item-link:hover {
     margin-top: 4px;
     padding-bottom: 2px;
-    text-decoration: none;
     border-bottom: 2px solid #000;
+    text-decoration: none;
 }
 
-/*
-.header-main-nav-middle-menu-item-link:hover {
-border-bottom: 2px solid #000;
-}
-*/
-.header-main-nav-right {
+/* ** NAV ACCESSIBILITY **/
+.header-nav-access {
     height: 100%;
     width: 100%;
     flex: 6;
     display: flex;
 }
 
-.header-main-nav-right-menu {
+.header-nav-access-menu {
     height: 100%;
     width: 100%;
     
@@ -147,11 +145,11 @@ border-bottom: 2px solid #000;
     align-items: center;
 }
 
-.header-main-nav-right-menu-item {
+.header-nav-access-menu-item {
     padding: 0 20px;
 }
 
-.header-main-nav-right-menu-item-link {
+.header-nav-access-menu-item-link {
     height: 100%;
     display: flex;
     align-items: center;
@@ -159,7 +157,7 @@ border-bottom: 2px solid #000;
     color: var(--color-nav-main);
 }
 
-.header-main-nav-right-menu-item-link:hover {
+.header-nav-access-menu-item-link:hover {
     margin-top: 4px;
     padding-bottom: 2px;
     text-decoration: none;
@@ -181,7 +179,7 @@ border-bottom: 2px solid #000;
 .fa-search {
     transform: rotate(90deg);
 }
-/* ***** MAIN-NAV END ***** */
+/* ***** NAVIGATION END ***** */
 /* ***** HEADER END ***** */
 
 /* ***** MAIN START ***** */
