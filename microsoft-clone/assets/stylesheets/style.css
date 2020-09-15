@@ -1,9 +1,9 @@
 /* ***** STYLED AND TESTED WITH RESOLUTION 1680x1050
 WONT DISPLAY PROPERLY ON OTHER RESOLUTIONS ***** */
 
-/* TODO: REPLACE x-link::after WITH ICON TO PREVENT text-decoration AND EASIER TRANSFORMATION WHEN HOVERING */
-/* TODO: REMOVE REDUNDANT CODE */
+/* TODO: REPLACE x-link::after WITH ICON(chevron) TO PREVENT text-decoration AND EASIER TRANSFORMATION WHEN HOVERING */
 /* TODO: MERGE STYLING FOR main-section-X THAT USE THE SAME STYLING */
+/* TODO: REMOVE REDUNDANT CODE */
 
 /* ***** VARIABLES ***** */
 :root {
@@ -56,9 +56,15 @@ a:hover, a:active {
 
 .btn {
     padding: 8px 20px;
-    background-color: #000;
+}
 
+.btn-dark {
     color: #fff;
+    background-color: #000;
+}
+
+.btn-light {
+    color: var(--color-text-general);
 }
 
 /* ***** HEADER START ***** */
@@ -188,6 +194,11 @@ a:hover, a:active {
 /* ***** HERO START ***** */
 .main-hero {
     height: 565px;
+    width: 100%;    
+}
+
+.main-hero-showcase {
+    height: 100%;
     width: 100%;
 
     background: url(../img/xbox-series-s.jpeg);
@@ -196,32 +207,34 @@ a:hover, a:active {
     background-repeat: no-repeat;
 }
 
-.main-hero-content {
+.main-hero-showcase-content {
     height: 100%;
-    width: 88%;
-    margin: 0 auto;
+    width: 100%;
+    padding-left: 6%;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.main-hero-title {
+.main-hero-showcase-title {
     margin: 20px 0;
     font-size: 2rem;
 }
 
-.main-hero-paragraph {
+.main-hero-showcase-paragraph {
     font-weight: 400;
 }
 
-.main-hero-link {
-    width: 115px;
+.main-hero-showcase-link-container {
     margin: 20px 0;
+}
+.main-hero-showcase-link {
+    min-width: 115px;
     font-weight: 600;
 }
 
-.main-hero-link::after {
+.main-hero-showcase-link::after {
     content: ">";
     padding-left: 5px;
     font-size: 1rem;
