@@ -543,9 +543,10 @@ a:hover, a:active {
 
 }
 
-.footer-top-content-title {
+.footer-top-content-menu-title {
     margin-top: 36px;
     font-size: 1rem;
+    font-weight: 600;
 }
 
 .footer-top-content-menu-item {
@@ -559,6 +560,7 @@ a:hover, a:active {
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .footer-bottom-content-right-menu {
