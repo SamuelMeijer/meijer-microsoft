@@ -2,6 +2,8 @@
 WONT DISPLAY PROPERLY ON OTHER RESOLUTIONS ***** */
 
 /* TODO: REPLACE x-link::after WITH ICON TO PREVENT text-decoration AND EASIER TRANSFORMATION WHEN HOVERING */
+/* TODO: REMOVE REDUNDANT CODE */
+/* TODO: MERGE STYLING FOR main-section-X THAT USE THE SAME STYLING */
 
 /* ***** VARIABLES ***** */
 :root {
@@ -128,15 +130,15 @@ a:hover, a:active {
     text-decoration: none;
 }
 
-/* ** NAV ACCESSIBILITY **/
-.header-nav-access {
+/* ** NAV UTILITY **/
+.header-nav-utility {
     height: 100%;
     width: 100%;
     flex: 6;
     display: flex;
 }
 
-.header-nav-access-menu {
+.header-nav-utility-menu {
     height: 100%;
     width: 100%;
     
@@ -145,11 +147,11 @@ a:hover, a:active {
     align-items: center;
 }
 
-.header-nav-access-menu-item {
+.header-nav-utility-menu-item {
     padding: 0 20px;
 }
 
-.header-nav-access-menu-item-link {
+.header-nav-utility-menu-item-link {
     height: 100%;
     display: flex;
     align-items: center;
@@ -157,7 +159,7 @@ a:hover, a:active {
     color: var(--color-nav-main);
 }
 
-.header-nav-access-menu-item-link:hover {
+.header-nav-utility-menu-item-link:hover {
     margin-top: 4px;
     padding-bottom: 2px;
     text-decoration: none;
